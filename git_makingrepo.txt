@@ -1,0 +1,593 @@
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile
+$ git init
+Initialized empty Git repository in C:/Users/hplap/Desktop/gitfile/.git/
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ touch cppfile
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ touch cppfile2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ vim cppfile2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ cat cppfile2.cpp
+#include <iostream>
+
+int main (){
+
+        cout<<"hello world"<<endl;
+        return 0;
+}
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git and cppfile2.cpp
+git: 'and' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git add cppfile2.cpp
+warning: LF will be replaced by CRLF in cppfile2.cpp.
+The file will have its original line endings in your working directory
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   cppfile2.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cppfile
+
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sajaljainiitk@LAPTOP-V8K5GKPO.(none)')
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git config --global user.name = "sajaljain23"
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git conifg --global user.email - "jsajal21@iitk.ac.in"
+git: 'conifg' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   cppfile2.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cppfile
+
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sajaljainiitk@LAPTOP-V8K5GKPO.(none)')
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name==
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git config --global user.name "sajaljain23"
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git config --global user.email "jsajal21@iitk.ac.in"
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ gitlog
+bash: gitlog: command not found
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git commit -m "first commit"
+[master (root-commit) d6aaba3] first commit
+ 1 file changed, 7 insertions(+)
+ create mode 100644 cppfile2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git log
+commit d6aaba375af72e3175d5e60eab7d60e12a09ef30 (HEAD -> master)
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:49:08 2022 +0530
+
+    first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ touch file2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ vim file2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ vim file2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ vim file2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git add file2.cpp
+warning: LF will be replaced by CRLF in file2.cpp.
+The file will have its original line endings in your working directory
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git commit -m "second commit"
+[master 593dddc] second commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 file2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git log
+commit 593dddc81fe88295d3984bdc6ba2f3c1ee85f407 (HEAD -> master)
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:54:17 2022 +0530
+
+    second commit
+
+commit d6aaba375af72e3175d5e60eab7d60e12a09ef30
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:49:08 2022 +0530
+
+    first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git checkout d6aaba375af72e3175d5e60eab7d60e12a09ef30
+Note: switching to 'd6aaba375af72e3175d5e60eab7d60e12a09ef30'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at d6aaba3 first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile ((d6aaba3...))
+$ ls
+cppfile  cppfile2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile ((d6aaba3...))
+$ git log
+commit d6aaba375af72e3175d5e60eab7d60e12a09ef30 (HEAD)
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:49:08 2022 +0530
+
+    first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile ((d6aaba3...))
+$ git checkout 593dddc81fe88295d3984bdc6ba2f3c1ee85f407
+Previous HEAD position was d6aaba3 first commit
+HEAD is now at 593dddc second commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile ((593dddc...))
+$ ls
+cppfile  cppfile2.cpp  file2.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile ((593dddc...))
+$ git checkout d6aaba375af72e3175d5e60eab7d60e12a09ef30
+Previous HEAD position was 593dddc second commit
+HEAD is now at d6aaba3 first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile ((d6aaba3...))
+$ git log
+commit d6aaba375af72e3175d5e60eab7d60e12a09ef30 (HEAD)
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:49:08 2022 +0530
+
+    first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile ((d6aaba3...))
+$ master
+bash: master: command not found
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile ((d6aaba3...))
+$ git checkout master
+Previous HEAD position was d6aaba3 first commit
+Switched to branch 'master'
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git log
+commit 593dddc81fe88295d3984bdc6ba2f3c1ee85f407 (HEAD -> master)
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:54:17 2022 +0530
+
+    second commit
+
+commit d6aaba375af72e3175d5e60eab7d60e12a09ef30
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:49:08 2022 +0530
+
+    first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ touch file3.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git add file3.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git commit -m "third commit"
+[master a569ee7] third commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file3.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git log
+commit a569ee7d9ffd1515b9d374bee2f8356b59c66176 (HEAD -> master)
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 23:04:52 2022 +0530
+
+    third commit
+
+commit 593dddc81fe88295d3984bdc6ba2f3c1ee85f407
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:54:17 2022 +0530
+
+    second commit
+
+commit d6aaba375af72e3175d5e60eab7d60e12a09ef30
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:49:08 2022 +0530
+
+    first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git checkout master
+Already on 'master'
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git log
+commit a569ee7d9ffd1515b9d374bee2f8356b59c66176 (HEAD -> master)
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 23:04:52 2022 +0530
+
+    third commit
+
+commit 593dddc81fe88295d3984bdc6ba2f3c1ee85f407
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:54:17 2022 +0530
+
+    second commit
+
+commit d6aaba375af72e3175d5e60eab7d60e12a09ef30
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:49:08 2022 +0530
+
+    first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cppfile
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git checkout master
+Already on 'master'
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git log
+commit a569ee7d9ffd1515b9d374bee2f8356b59c66176 (HEAD -> master)
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 23:04:52 2022 +0530
+
+    third commit
+
+commit 593dddc81fe88295d3984bdc6ba2f3c1ee85f407
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:54:17 2022 +0530
+
+    second commit
+
+commit d6aaba375af72e3175d5e60eab7d60e12a09ef30
+Author: sajaljain23 <jsajal21@iitk.ac.in>
+Date:   Wed Jun 22 22:49:08 2022 +0530
+
+    first commit
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git branch feature
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git branch
+  feature
+* master
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ ls
+cppfile  cppfile2.cpp  file2.cpp  file3.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git checkout feature
+Switched to branch 'feature'
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git branch
+* feature
+  master
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ ls
+cppfile  cppfile2.cpp  file2.cpp  file3.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ touch file4.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git status
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cppfile
+        file4.cpp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git add file4.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ fir commit -m"add feature one to feature bracnh"
+bash: fir: command not found
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ ls
+cppfile  cppfile2.cpp  file2.cpp  file3.cpp  file4.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git chexkout master
+git: 'chexkout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ ls
+cppfile  cppfile2.cpp  file2.cpp  file3.cpp  file4.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git merge feature
+Already up to date.
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git checkout master
+Switched to branch 'master'
+A       file4.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ ls
+cppfile  cppfile2.cpp  file2.cpp  file3.cpp  file4.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git merge feature
+Already up to date.
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git checkout feature
+Switched to branch 'feature'
+A       file4.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git branch
+* feature
+  master
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ touch file5.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git add file5.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git commit -m "add this"
+[feature 9ac23b6] add this
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file4.cpp
+ create mode 100644 file5.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ ls
+cppfile  cppfile2.cpp  file2.cpp  file3.cpp  file4.cpp  file5.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git chekout master
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ ls
+cppfile  cppfile2.cpp  file2.cpp  file3.cpp  file4.cpp  file5.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (feature)
+$ git checkout master
+Switched to branch 'master'
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ ls
+cppfile  cppfile2.cpp  file2.cpp  file3.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git merge feature
+Updating a569ee7..9ac23b6
+Fast-forward
+ file4.cpp | 0
+ file5.cpp | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file4.cpp
+ create mode 100644 file5.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ ls
+cppfile  cppfile2.cpp  file2.cpp  file3.cpp  file4.cpp  file5.cpp
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git remote add origin https://github.com/sajaljain23/Repo_CommandLine_bash.git
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git remote
+origin
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git remote -t
+error: unknown switch `t'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git remote -v
+origin  https://github.com/sajaljain23/Repo_CommandLine_bash.git (fetch)
+origin  https://github.com/sajaljain23/Repo_CommandLine_bash.git (push)
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git fetch
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git pull origin
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git pull origin main : master
+fatal: couldn't find remote ref main
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git remote add origin https://github.com/sajaljain23/Repo_CommandLine_bash.git
+\error: remote origin already exists.
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git pull origin main : master
+fatal: couldn't find remote ref main
+
+sajaljainiitk@LAPTOP-V8K5GKPO MINGW64 ~/Desktop/gitfile (master)
+$ git push --set-upstream origin master
+
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 973 bytes | 37.00 KiB/s, done.
+Total 11 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/sajaljain23/Repo_CommandLine_bash.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
