@@ -9,9 +9,9 @@ driver  = webdriver.Chrome(r"C:\Users\hplap\Downloads\chromedriver_win32\chromed
 driver.get("https://hello.iitk.ac.in/user/login")
 # driver.close()
 
-driver.find_element_by_id("edit-name").send_keys("jsajal21@iitk.ac.in")
+driver.find_element_by_id("edit-name").send_keys("email")
 time.sleep(0.2)
-driver.find_element_by_id("edit-pass").send_keys("imgenius2@3SA")
+driver.find_element_by_id("edit-pass").send_keys("password")
 time.sleep(0.4)
 driver.find_element_by_id("edit-submit").click()
 time.sleep(0.4)
